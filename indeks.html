@@ -1,13 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Website</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PORTFOLIO — Alex Rivera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>Welcome</h1>
-<p>Edit this project into your own website.</p>
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">PORTFOLIO</a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Available for hire</div>
+      <h1 class="hero-title">ALEX<br><span>RIVERA</span></h1>
+      <p class="hero-subtitle">Full-Stack Developer &amp; Creative Technologist</p>
+      <p class="hero-desc">I build fast, beautiful digital products. From concept to deployment — turning ideas into extraordinary user experiences.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+          View My Work
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll to explore</div>
+  </section>
+
+  <!-- FEATURED WORK -->
+  <section id="work" class="spotlight">
+    <div class="section-label">
+      <h2>Featured Work</h2>
+      <span>Selected Projects</span>
+    </div>
+    <div class="spotlight-grid fade-in">
+      <div class="spotlight-main">
+        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=900&q=80" alt="E-Commerce Platform"/>
+        <div class="spotlight-main-info">
+          <span class="spotlight-tag">Web App</span>
+          <h3>NexCart — E-Commerce Platform</h3>
+          <p>A full-stack shopping experience with real-time inventory, AI recommendations, and seamless checkout. React · Node.js · PostgreSQL</p>
+        </div>
+      </div>
+      <div class="spotlight-side">
+        <div class="spotlight-small">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Dashboard"/>
+          <div class="spotlight-small-info">
+            <span class="spotlight-tag" style="font-size:0.6rem;padding:2px 6px;">Dashboard</span>
+            <h3>AnalyticsPro — Data Visualizer</h3>
+            <p>Real-time analytics · D3.js</p>
+          </div>
+        </div>
+        <div class="spotlight-small">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="Mobile App"/>
+          <div class="spotlight-small-info">
+            <span class="spotlight-tag" style="font-size:0.6rem;padding:2px 6px;">Mobile</span>
+            <h3>FitTrack — Health &amp; Fitness App</h3>
+            <p>React Native · HealthKit integration</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-label">
+      <h2>Capabilities</h2>
+      <span>What I Bring</span>
+    </div>
+    <div class="skills-row fade-in">
+      <div class="skill-card">
+        <span class="skill-icon">⚛️</span>
+        <h4>React</h4>
+        <p>Frontend Development</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🟢</span>
+        <h4>Node.js</h4>
+        <p>Backend Services</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🗄️</span>
+        <h4>PostgreSQL</h4>
+        <p>Database Design</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">☁️</span>
+        <h4>AWS</h4>
+        <p>Cloud Infrastructure</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🎨</span>
+        <h4>Figma</h4>
+        <p>UI/UX Design</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🐳</span>
+        <h4>Docker</h4>
+        <p>Containerization</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">🤖</span>
+        <h4>AI/ML</h4>
+        <p>Integration &amp; APIs</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-icon">📱</span>
+        <h4>React Native</h4>
+        <p>Mobile Apps</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
+    <div class="section-label">
+      <h2>Experience</h2>
+      <span>The Journey</span>
+    </div>
+    <div class="timeline fade-in">
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-role">Senior Full-Stack Engineer</div>
+        <div class="timeline-company">TechFlow Labs</div>
+        <p class="timeline-desc">Led a team of 5 engineers delivering a SaaS platform serving 50K+ users. Reduced load times by 60% through architectural refactoring.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-role">Frontend Developer</div>
+        <div class="timeline-company">Pixel Studio</div>
+        <p class="timeline-desc">Built responsive, accessible web applications for clients in fintech and e-commerce. Shipped 12 major features in under 18 months.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-role">Junior Developer</div>
+        <div class="timeline-company">StartupNest</div>
+        <p class="timeline-desc">Contributed to early-stage MVPs from zero to launch. Gained deep expertise in agile workflows and rapid prototyping under tight deadlines.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2 class="fade-in">Let's Build Something.</h2>
+    <p class="fade-in">Have a project in mind? I'm currently open to new opportunities and collaborations.</p>
+    <div class="contact-links fade-in">
+      <a href="mailto:alex@example.com" class="btn btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22,7-10,7L2,7"/></svg>
+        alex@example.com
+      </a>
+      <a href="#" class="btn btn-secondary">GitHub</a>
+      <a href="#" class="btn btn-secondary">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo">PORTFOLIO</div>
+    <p>© 2024 Alex Rivera — Designed with passion</p>
+    <p style="font-size:0.72rem;color:#444;">Built in HTML · CSS · JS</p>
+  </footer>
+
+  <script>
+    // Sticky nav shadow
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
